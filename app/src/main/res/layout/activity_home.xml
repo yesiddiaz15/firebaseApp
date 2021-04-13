@@ -28,7 +28,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="10dp" />
 
         <TextView
             android:id="@+id/textViewProvider"
@@ -38,7 +38,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="10dp" />
 
         <EditText
             android:id="@+id/textViewAddress"
@@ -48,7 +48,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="10dp" />
 
         <EditText
             android:id="@+id/textViewPhone"
@@ -58,7 +58,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="10dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -78,7 +78,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="10dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -98,7 +98,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="10dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -119,7 +119,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="10dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -127,7 +127,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/buttonSave"
+                android:id="@+id/buttonLogOut"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -138,7 +138,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="10dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -155,5 +155,18 @@
                 app:backgroundTint="#FF0000" />
 
         </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/buttonAnimations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Animaciones con LOTTIE"
+            app:backgroundTint="#009688" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

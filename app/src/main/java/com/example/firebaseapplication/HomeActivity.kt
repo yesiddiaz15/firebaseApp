@@ -1,6 +1,7 @@
 package com.example.firebaseapplication
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -67,7 +68,7 @@ class HomeActivity : AppCompatActivity() {
         textViewEmail.text = email
         textViewProvider.text = provider
 
-        buttonSave.setOnClickListener {
+        buttonLogOut.setOnClickListener {
             val prefs = getSharedPreferences("prefs_file", Context.MODE_PRIVATE).edit()
             prefs.clear()
             prefs.apply()
@@ -112,6 +113,12 @@ class HomeActivity : AppCompatActivity() {
         buttonDelete.setOnClickListener {
 
             db.collection("users").document(email).delete()
+        }
+
+        buttonAnimations.setOnClickListener {
+
+            val animationsIntent = Intent(this, LottieAnimations::class.java)
+            startActivity(animationsIntent)
         }
     }
 }
